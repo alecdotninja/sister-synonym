@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import indefinite from 'indefinite';
-import thesaurus from 'thesaurus';
+import synonyms from './synonyms';
 import pronunciationDictionary from 'cmu-pronouncing-dictionary';
 
 import './App.css';
@@ -33,12 +33,7 @@ const findSisterSynonymFor = (word) => {
     return;
   }
 
-  const candidates =
-    thesaurus
-    .find(word)
-    .filter(isSisterSatisfactory);
-
-  return sample(candidates);
+  return sample(synonyms(word).filter(isSisterSatisfactory));
 };
 
 const initialWord = sample([
@@ -66,7 +61,7 @@ function App() {
           type="text"
           value={word}
           onChange={(event) => setWord(event.currentTarget.value)}
-          size={word.length}
+          size={word.length || 1}
           autoFocus
         />
         ?
