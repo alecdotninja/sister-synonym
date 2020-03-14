@@ -27,10 +27,8 @@ function App() {
   return (
     <div className="App">
       <div className="question">
-        What does James Charles call
-        {' '}
-        {indefinite(word, { articleOnly: true })}
-        {' '}
+        What does James Charles call{' '}
+        {indefinite(word, { articleOnly: true })}{' '}
         <input
           type="text"
           value={word}
@@ -43,9 +41,10 @@ function App() {
 
       {sisterSynonym && (
         <div className="answer">
-          He calls it
-          {' '}
-          <strong>a sister {sisterSynonym}</strong>
+          He calls it {' '}
+          <strong class="no-wrap">
+            a sister {sisterSynonym}
+          </strong>
           .
         </div>
       )}
