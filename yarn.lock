@@ -2735,11 +2735,6 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
-cmu-pronouncing-dictionary@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/cmu-pronouncing-dictionary/-/cmu-pronouncing-dictionary-2.0.0.tgz#d0a705dec4e0cb93568645939105215e0f991636"
-  integrity sha512-NmQC+mM/yIgoNYr5KNOR6vDwFI7BflDDEMw5SFDE9X7ppT2dBtP/AA+zJ0sebZY49fLF5ZZCRWeQggmXTTzeZw==
-
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"

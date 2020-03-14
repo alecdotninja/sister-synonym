@@ -1,7 +1,7 @@
-import synonyms from './synonyms.json';
+import database from './data/synonyms.json';
 
 export default (word) => (
     (
-        word && synonyms[word.toLowerCase()]
+        word && database[word.toLowerCase()]
     ) || []
 );
