@@ -1,6 +1,6 @@
 # Sister Synonym
 
-[Sister Synonym](https://sister.alec.ninja) is a small application to help with sister sayings.
+[Sister Synonym](https://sister-synonym.alec.ninja) is a small application to help with sister sayings.
 
 ![Demo](demo.gif)
 
